@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nam.board.mappers.board">
+
+
+<!-- 11/26 추가 미니 게시판 등록  -->
+<insert id="mWrite" parameterType="nam.board.domain.BoardVO">
+	insert into tbl_mboard (mwriter, mtitle, mcontent) values (#{mwriter}, #{mtitle}, #{mcontent}) 
+</insert>
+
+<!-- 11/26 미니 게시판 목록  -->
+<select id="mList" resultType="nam.board.domain.BoardVO">
+	select seqno, mwriter, mtitle, to_char(mregDate,'YYY-MM-DD') as mregDate from tbl_mboard order by mregDate desc
+</select>
+
+<!-- 11/26 미니 게시판 목록 보기 -->
+<select id="mView" parameterType="int" resultType="nam.board.domain.BoardVO">
+	SELECT seqno, mwriter, mtitle, to_char(mregDate,'YYY-MM-DD') as mregDate ,mcontent FROM tbl_mboard WHERE seqno=#{seqno}
+</select>
+
+<!-- 11/26 추가 미니 게시판 수정  -->
+<update id="mModify" parameterType="nam.board.domain.BoardVO">
+	update tbl_mboard
+	 set 
+	 mwriter = #{mwriter},
+	  mtitle= #{mtitle},
+	   mcontent= #{mcontent}
+	 where seqno =#{seqno}
+</update>
+
+
+<!-- 11/26 추가 미니 게시판 삭제  -->
+<delete id="mDelete" parameterType="int">
+	delete from tbl_mboard where seqno =#{seqno}
+</delete>
+
+</mapper>
