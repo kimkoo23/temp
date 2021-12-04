@@ -1,13 +1,0 @@
-Êþº¾   2 /  com/board/domain/BoardVO  java/lang/Object seqno I mwriter Ljava/lang/String; mtitle mregDate mcontent <init> ()V Code
-     LineNumberTable LocalVariableTable this Lcom/board/domain/BoardVO; getSeqno ()I	     setSeqno (I)V 
-getMwriter ()Ljava/lang/String;	     
-setMwriter (Ljava/lang/String;)V 	getMtitle	  # 	  	setMtitle getMregDate	  ' 
-  setMregDate getMcontent	  +   setMcontent 
-SourceFile BoardVO.java !                 	     
-                 /     *? ?                               /     *? ?                               >     *? ?       
-                                /     *? ?                                >     *+? ?       
-                          !      /     *? "?                         $       >     *+? "?       
-       !                	    %      /     *? &?           $              (       >     *+? &?       
-    (  )                
-    )      /     *? *?           ,              ,       >     *+? *?       
-    0  1                    -    .

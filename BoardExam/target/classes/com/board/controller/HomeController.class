@@ -1,10 +1,0 @@
-Êþº¾   2 M  #com/board/controller/HomeController  java/lang/Object logger Lorg/slf4j/Logger; <clinit> ()V Code
-    org/slf4j/LoggerFactory   	getLogger %(Ljava/lang/Class;)Lorg/slf4j/Logger;	     LineNumberTable LocalVariableTable <init>
-     this %Lcom/board/controller/HomeController; home D(Ljava/util/Locale;Lorg/springframework/ui/Model;)Ljava/lang/String; RuntimeVisibleAnnotations 8Lorg/springframework/web/bind/annotation/RequestMapping; value / method 7Lorg/springframework/web/bind/annotation/RequestMethod; GET # &Welcome home! The client locale is {}. % ' & org/slf4j/Logger ( ) info '(Ljava/lang/String;Ljava/lang/Object;)V + java/util/Date
- * 
- . 0 / java/text/DateFormat 1 2 getDateTimeInstance ,(IILjava/util/Locale;)Ljava/text/DateFormat;
- . 4 5 6 format $(Ljava/util/Date;)Ljava/lang/String; 8 
-serverTime : < ; org/springframework/ui/Model = > addAttribute D(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;  locale Ljava/util/Locale; model Lorg/springframework/ui/Model; date Ljava/util/Date; 
-dateFormat Ljava/text/DateFormat; formattedDate Ljava/lang/String; 
-SourceFile HomeController.java +Lorg/springframework/stereotype/Controller; !                	   )      	? 
-? ?                      	   /     *? ?                                   [ s  [ e   ! 	   ?     1? "+? $ ? *Y? ,N+? -:-? 3:,7? 9 W??                   # " . $    >    1       1 @ A    1 B C    D E    F G  #  H I   J    K      L  

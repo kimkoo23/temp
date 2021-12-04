@@ -1,19 +1,0 @@
-Êþº¾   2 I  com/board/domain/BoardPage  java/lang/Object num I count postNum pageNum displayPost 
-pageNumCnt 
-endPageNum startPageNum prev Z next <init> ()V Code
-    	    	     LineNumberTable LocalVariableTable this Lcom/board/domain/BoardPage; getCount ()I	  !   
-getPostNum 
-getPageNum	  % 	  getDisplayPost	  ( 
-  getPageNumCnt getEndPageNum	  ,   getStartPageNum	  /   getPrev ()Z	  3   getNext	  6   setNum (I)V	  :   setCount
-  = >  dataCal
- @ B A java/lang/Math C D ceil (D)D endPageNum_tmp StackMapTable 
-SourceFile BoardPage.java !     
-                 	     
-                                     G     *? *
-? *
-? ?              
-                       /     *?  ?           !              "      /     *? ?           %              #      /     *? $?           )              &      /     *? '?           -              )      /     *? ?           1              *      /     *? +?           5              -      /     *? .?           9              0 1     /     *? 2?           =              4 1     /     *? 5?           A              7 8     >     *? 9?       
-    E  F                    ; 8     F     
-*?  *? <?           I  J 	 K        
-       
-     >          **? 9?? ‡o? ?*? ‡kŽµ +**? +*? dd? .*?  ?? ‡o? ??*? +? *? +**? .? ? ? 2**? +*? h*?  ? ? ? 5**? 9d*? h? '?       & 	   P  S ( V 8 X @ Y E \ V ] o _ ~ a             8 G E   F   , ? EL ÿ      W ÿ        G    H
